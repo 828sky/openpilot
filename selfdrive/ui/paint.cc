@@ -983,8 +983,8 @@ void ui_nvg_init(UIState *s) {
   assert(s->img_turn >= 0);
   s->img_turn = nvgCreateImage(s->vg, "../assets/img_trafficSign_turn.png", 1);
 
-  assert(s->img_face >= 0);
-  s->img_face = nvgCreateImage(s->vg, "../assets/img_driver_face.png", 1);
+  // assert(s->img_face >= 0);
+  // s->img_face = nvgCreateImage(s->vg, "../assets/img_driver_face.png", 1);
 
   assert(s->img_map >= 0);
   s->img_map = nvgCreateImage(s->vg, "../assets/img_map.png", 1);
