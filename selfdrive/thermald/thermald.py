@@ -335,13 +335,13 @@ def thermald_thread():
 
     # if any CPU gets above 107 or the battery gets above 63, kill all processes
     # controls will warn with CPU above 95 or battery above 60
-    if thermal_status >= ThermalStatus.danger:
+    # if thermal_status >= ThermalStatus.danger:
       #should_start = False I removed this to allow to run when overheated
-      if thermal_status_prev < ThermalStatus.danger:
-        params.put("Offroad_TemperatureTooHigh", json.dumps(OFFROAD_ALERTS["Offroad_TemperatureTooHigh"]))
-    else:
-      if thermal_status_prev >= ThermalStatus.danger:
-        params.delete("Offroad_TemperatureTooHigh")
+     # if thermal_status_prev < ThermalStatus.danger:
+      #  params.put("Offroad_TemperatureTooHigh", json.dumps(OFFROAD_ALERTS["Offroad_TemperatureTooHigh"]))
+   # else:
+   #   if thermal_status_prev >= ThermalStatus.danger:
+    #    params.delete("Offroad_TemperatureTooHigh")
 
     if should_start:
       if not should_start_prev:
