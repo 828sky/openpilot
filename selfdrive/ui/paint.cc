@@ -705,7 +705,7 @@ static void ui_draw_vision_map(UIState *s) {
 
  static void ui_draw_vision_face(UIState *s) {
   const UIScene *scene = &s->scene;
-  const int face_size = .01;
+  const int face_size = 98;
   const int face_x = (scene->ui_viz_rx + face_size + (bdr_s * 2));
   const int face_y = (footer_y + ((footer_h - face_size) / 2));
   const int face_img_size = (face_size * 1.5);
