@@ -728,19 +728,19 @@ static void ui_draw_vision_map(UIState *s) {
 //  nvgFill(s->vg);
 //}
 
-static void ui_draw_vision_header(UIState *s) {
-  const UIScene *scene = &s->scene;
-  int ui_viz_rx = scene->ui_viz_rx;
-  int ui_viz_rw = scene->ui_viz_rw;
+//static void ui_draw_vision_header(UIState *s) {
+ // const UIScene *scene = &s->scene;
+//  int ui_viz_rx = scene->ui_viz_rx;
+//  int ui_viz_rw = scene->ui_viz_rw;
 
-  nvgBeginPath(s->vg);
-  NVGpaint gradient = nvgLinearGradient(s->vg, ui_viz_rx,
-                        (box_y+(header_h-(header_h/2.5))),
-                        ui_viz_rx, box_y+header_h,
-                        nvgRGBAf(0,0,0,0.45), nvgRGBAf(0,0,0,0));
-  nvgFillPaint(s->vg, gradient);
-  nvgRect(s->vg, ui_viz_rx, box_y, ui_viz_rw, header_h);
-  nvgFill(s->vg);
+//  nvgBeginPath(s->vg);
+//  NVGpaint gradient = nvgLinearGradient(s->vg, ui_viz_rx,
+ //                       (box_y+(header_h-(header_h/2.5))),
+//                        ui_viz_rx, box_y+header_h,
+//                        nvgRGBAf(0,0,0,0.45), nvgRGBAf(0,0,0,0));
+ // nvgFillPaint(s->vg, gradient);
+//  nvgRect(s->vg, ui_viz_rx, box_y, ui_viz_rw, header_h);
+ // nvgFill(s->vg);
 
   ui_draw_vision_maxspeed(s);
 
@@ -751,15 +751,15 @@ static void ui_draw_vision_header(UIState *s) {
   ui_draw_vision_event(s);
 }
 
-static void ui_draw_vision_footer(UIState *s) {
-  const UIScene *scene = &s->scene;
-  int ui_viz_rx = scene->ui_viz_rx;
-  int ui_viz_rw = scene->ui_viz_rw;
+//static void ui_draw_vision_footer(UIState *s) {
+//  const UIScene *scene = &s->scene;
+ // int ui_viz_rx = scene->ui_viz_rx;
+ // int ui_viz_rw = scene->ui_viz_rw;
 
-  nvgBeginPath(s->vg);
-  nvgRect(s->vg, ui_viz_rx, footer_y, ui_viz_rw, footer_h);
+//  nvgBeginPath(s->vg);
+//  nvgRect(s->vg, ui_viz_rx, footer_y, ui_viz_rw, footer_h);
 
-  ui_draw_vision_face(s);
+//  ui_draw_vision_face(s);
 
 #ifdef SHOW_SPEEDLIMIT
   // ui_draw_vision_map(s);
