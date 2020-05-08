@@ -726,7 +726,7 @@ static void ui_draw_vision_map(UIState *s) {
 //  nvgRect(s->vg, face_img_x, face_img_y, face_img_size, face_img_size);
  // nvgFillPaint(s->vg, face_img);
 //  nvgFill(s->vg);
-}
+//}
 
 static void ui_draw_vision_header(UIState *s) {
   const UIScene *scene = &s->scene;
