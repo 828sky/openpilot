@@ -736,7 +736,7 @@ static void ui_draw_vision_footer(UIState *s) {
   nvgBeginPath(s->vg);
   nvgRect(s->vg, ui_viz_rx, footer_y, ui_viz_rw, footer_h);
 
-  //ui_draw_vision_face(s);
+ 
 
 #ifdef SHOW_SPEEDLIMIT
    ui_draw_vision_map(s);
