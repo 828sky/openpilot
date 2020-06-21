@@ -403,12 +403,12 @@ ALERTS = [
       AlertStatus.critical, AlertSize.full,
       Priority.MID, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .1, 2., 2.),
 
-  Alert(
-      "commIssue",
-      "TAKE CONTROL IMMEDIATELY",
-      "Communication Issue between Processes",
-      AlertStatus.critical, AlertSize.full,
-      Priority.MID, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .1, 2., 2.),
+#  Alert(
+  #    "commIssue",
+ #     "TAKE CONTROL IMMEDIATELY",
+ #     "Communication Issue between Processes",
+ #     AlertStatus.critical, AlertSize.full,
+ #     Priority.MID, VisualAlert.steerRequired, AudibleAlert.chimeWarningRepeat, .1, 2., 2.),
 
   Alert(
       "radarCommIssue",
