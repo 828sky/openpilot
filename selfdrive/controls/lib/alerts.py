@@ -659,12 +659,12 @@ ALERTS = [
       AlertStatus.normal, AlertSize.mid,
       Priority.LOW, VisualAlert.none, AudibleAlert.chimeError, .4, 2., 3.),
 
-  Alert(
-      "commIssueNoEntry",
-      "openpilot Unavailable",
-      "Communication Issue between Processes",
-      AlertStatus.normal, AlertSize.mid,
-      Priority.LOW, VisualAlert.none, AudibleAlert.chimeDisengage, .4, 2., 3.),
+#  Alert(
+ #     "commIssueNoEntry",
+  #    "openpilot Unavailable",
+  #    "Communication Issue between Processes",
+  #    AlertStatus.normal, AlertSize.mid,
+  #    Priority.LOW, VisualAlert.none, AudibleAlert.chimeDisengage, .4, 2., 3.),
 
   Alert(
       "radarCommIssueNoEntry",
